@@ -8,7 +8,7 @@ Donde:
 - \( K \) es la ganancia del sistema.
 - \( \tau \) es la constante de tiempo.
 
-En Python con `scipy`, puedes representar esta función de transferencia usando:
+- $\sqrt{3x-1}+(1+x)^2$
 
 |                          | Python (control)                                    | MATLAB               |
 |--------------------------|-----------------------------------------------------|----------------------|
