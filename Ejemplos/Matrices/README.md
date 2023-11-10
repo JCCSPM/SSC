@@ -14,3 +14,13 @@ vector_python = np.array([1, 2, 3, 4, 5])
 
 # Mostrar el vector en Python
 print("Vector en Python:", vector_python)
+
+Codigo en Matlab
+```matlab
+% Crear un vector en MATLAB
+vector_matlab = [1, 2, 3, 4, 5];
+
+% Mostrar el vector en MATLAB
+disp('Vector en MATLAB:')
+disp(vector_matlab)
+```
