@@ -107,7 +107,7 @@ semilogx(frecuencia, fase)
 title('Diagrama de Bode - Fase')
 xlabel('Frecuencia (Hz)')
 ```
-![Pregunta para codigo de Python](Graph/Bode.png)
+![BODE](Graph/Bode.png)
 
 ## Diagrama de Polos y Ceros
 |                          | Python (control)                                    | MATLAB               |
@@ -144,6 +144,6 @@ figure
 pzmap(sistema)
 title('Diagrama de Polos y Ceros - MATLAB')
 ```
-![Pregunta para codigo de Python](Graph/DiagramaPolosCeros.png)
+![Diagrama de Polos y Ceros](Graph/DiagramaPolosCeros.png)
 
 [Preguntas a ChatGPT](ChatGPT.md)
