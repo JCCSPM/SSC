@@ -26,4 +26,4 @@ disp('Vector en MATLAB:')
 disp(vector_matlab)
 ```
 
-[Preguntas a ChatGPT](Ejemplos/Matrices/ChatGPT)
+[Preguntas a ChatGPT](ChatGPT)
