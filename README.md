@@ -5,6 +5,10 @@ En el contexto de sistemas de control, la sintonización es esencial para garant
 
 La sintonización puede llevarse a cabo mediante diversos métodos, como el enfoque experimental, el análisis teórico o el uso de algoritmos de optimización. El objetivo final es encontrar la combinación óptima de parámetros que maximice el rendimiento del sistema de control.
 
+[Ejemplos: Matrices](/Ejemplos/Matrices/README.md)
+[Ejemplos: Sistemas de Primer Orden](/Ejemplos/Sistemas1Orden/README.md)
+[Ejemplos: Sistemas de Segundo Orden](/Ejemplos/Sistemas2Orden/README.md)
+
 ## Lugar Geometrico de las Raices
 El Lugar Geométrico de las Raíces (LGR) es un concepto fundamental en el análisis y diseño de sistemas de control. En el contexto de la teoría de control, el Lugar Geométrico de las Raíces se refiere al conjunto de puntos en el plano de las raíces que representan la ubicación de las raíces de la ecuación característica de un sistema en función de un parámetro de ajuste, como la ganancia de un controlador.
 
