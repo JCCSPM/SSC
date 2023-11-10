@@ -29,7 +29,7 @@ En resumen, el Lugar Geométrico de las Raíces es una técnica gráfica poderos
 
   ## Pasos para construir el LGR
   
-  | Herramienta   | Archivo     | Descripción                            |
+| Herramienta   | Archivo     | Descripción                            |
 |---------------|-------------|----------------------------------------|
 | Python        | `script.py` | Script para LGR con matplotlib y scipy |
 | MATLAB        | `script.m`  | Script para LGR en MATLAB              |
@@ -38,7 +38,7 @@ Codigo en Python
 ```python
 import matplotlib.pyplot as plt
 import numpy as np
-from scipy import signal
+import control as ctrl
 
 # Parámetros del sistema de primer orden
 tau = 1.0  # constante de tiempo
@@ -46,10 +46,10 @@ numerator = [1]
 denominator = [tau, 1]
 
 # Crear sistema de primer orden
-system = signal.TransferFunction(numerator, denominator)
+system = ctrl.TransferFunction(numerator, denominator)
 
 # Calcular el LGR
-roots, _ = signal.root_locus(system)
+roots, _ = ctrl.root_locus(system)
 
 # Graficar el LGR
 plt.plot(roots.real, roots.imag)
