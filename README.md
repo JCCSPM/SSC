@@ -11,7 +11,7 @@ La sintonización puede llevarse a cabo mediante diversos métodos, como el enfo
 
 [Ejemplos: Sistemas de Segundo Orden](/Ejemplos/Sistema2Orden/README.md)
 
-[Ejemplos: Sistemas de Segundo Orden](/Ejemplos/VariablesEstado/README.md)
+[Ejemplos: Variables de Estado](/Ejemplos/VariablesEstado/README.md)
 
 ## Lugar Geometrico de las Raices
 El Lugar Geométrico de las Raíces (LGR) es un concepto fundamental en el análisis y diseño de sistemas de control. En el contexto de la teoría de control, el Lugar Geométrico de las Raíces se refiere al conjunto de puntos en el plano de las raíces que representan la ubicación de las raíces de la ecuación característica de un sistema en función de un parámetro de ajuste, como la ganancia de un controlador.
