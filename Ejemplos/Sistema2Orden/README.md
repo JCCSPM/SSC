@@ -58,3 +58,4 @@ figure;
 step(sistema_matlab);
 title('Respuesta al escalón en MATLAB');
 ```
+[Preguntas a ChatGPT](ChatGPT.md)
