@@ -69,7 +69,7 @@ figure;
 step(sistema_matlab);
 title('Respuesta al escalón en MATLAB');
 ```
-![Pregunta para codigo de Python](Graph/RespuestaPaso.png)
+![Respuesta Paso](Graph/RespuestaPaso.png)
 
 ## Diagrama de Bode
 |                          | Python (control)                                    | MATLAB               |
