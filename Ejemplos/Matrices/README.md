@@ -25,4 +25,5 @@ vector_matlab = [1, 2, 3, 4, 5];
 disp('Vector en MATLAB:')
 disp(vector_matlab)
 ```
-![image](https://github.com/JCCSPM/SSC/assets/127865840/ea5cdda9-c83e-4017-83ac-04fb055f5114)
+
+Preguntas a ChatGPT
