@@ -69,6 +69,8 @@ figure;
 step(sistema_matlab);
 title('Respuesta al escalón en MATLAB');
 ```
+![Pregunta para codigo de Python](Graph/RespuestaPaso.png)
+
 ## Diagrama de Bode
 |                          | Python (control)                                    | MATLAB               |
 |--------------------------|-----------------------------------------------------|----------------------|
@@ -105,6 +107,8 @@ semilogx(frecuencia, fase)
 title('Diagrama de Bode - Fase')
 xlabel('Frecuencia (Hz)')
 ```
+![Pregunta para codigo de Python](Graph/Bode.png)
+
 ## Diagrama de Polos y Ceros
 |                          | Python (control)                                    | MATLAB               |
 |--------------------------|-----------------------------------------------------|----------------------|
@@ -140,5 +144,6 @@ figure
 pzmap(sistema)
 title('Diagrama de Polos y Ceros - MATLAB')
 ```
+![Pregunta para codigo de Python](Graph/DiagramaPolosCeros.png)
 
 [Preguntas a ChatGPT](ChatGPT.md)
