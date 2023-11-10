@@ -13,3 +13,13 @@ En otras palabras, el LGR muestra cómo cambian las raíces del polinomio caract
 El análisis del LGR es valioso para comprender el comportamiento del sistema y determinar cómo ajustar los parámetros del controlador para lograr la estabilidad y el rendimiento deseados. Además, el LGR es una herramienta visual que permite identificar las condiciones bajo las cuales el sistema puede volverse inestable o alcanzar ciertos objetivos de desempeño.
 
 En resumen, el Lugar Geométrico de las Raíces es una técnica gráfica poderosa utilizada en el diseño y análisis de sistemas de control para visualizar y comprender el efecto de los parámetros en la ubicación de las raíces del polinomio característico.
+
+- Grafica de los ceros y polos de una función racional en el plano s.
+- Muestra la ubicación de las raíces cuando algún parámetro de la función de sistema varía.
+- Generalmente se grafica el lugar de las raíces de la ecuación característica del sistema en malla cerrada.
+- Método para análisis y diseño.
+
+  ## Pasos para construir el LGR
+  
+
+
