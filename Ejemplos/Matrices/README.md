@@ -14,6 +14,7 @@ vector_python = np.array([1, 2, 3, 4, 5])
 
 # Mostrar el vector en Python
 print("Vector en Python:", vector_python)
+```
 
 Codigo en Matlab
 ```matlab
