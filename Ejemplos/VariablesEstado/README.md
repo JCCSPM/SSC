@@ -2,8 +2,7 @@
 ## Definición
 La función de transferencia de un sistema de primer orden se puede expresar como:
 
-$
-A = \begin{bmatrix}
+$A = \begin{bmatrix}
 -3 & 0 & 0 \\
 0 & -2 & 0 \\
 0 & 0 & -1
