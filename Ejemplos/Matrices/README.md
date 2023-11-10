@@ -26,4 +26,31 @@ disp('Vector en MATLAB:')
 disp(vector_matlab)
 ```
 
+## Matriz
+| Lenguaje  | Librería/Función | Código para Crear una Matriz    | Ejemplo de Vector |
+|------------|-------------------|------------------------------|-------------------|
+| Python     | NumPy             | matriz_python = np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9]]) | [1, 2, 3; 4, 5, 6; 7, 8, 9]   |
+| MATLAB     | -                 | matriz_matlab = [1, 2, 3; 4, 5, 6; 7, 8, 9]; | [1, 2, 3; 4, 5, 6; 7, 8, 9]  |
+
+Codigo en Python
+```python
+import numpy as np
+
+# Crear una matriz en Python usando NumPy
+matriz_python = np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9]])
+
+# Mostrar la matriz
+print("Matriz en Python:\n", matriz_python)
+```
+
+Codigo en Matlab
+```matlab
+% Crear una matriz en MATLAB
+matriz_matlab = [1, 2, 3; 4, 5, 6; 7, 8, 9];
+
+% Mostrar la matriz
+disp('Matriz en MATLAB:')
+disp(matriz_matlab)
+```
+
 [Preguntas a ChatGPT](ChatGPT.md)
