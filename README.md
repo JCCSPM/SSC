@@ -5,8 +5,10 @@ En el contexto de sistemas de control, la sintonización es esencial para garant
 
 La sintonización puede llevarse a cabo mediante diversos métodos, como el enfoque experimental, el análisis teórico o el uso de algoritmos de optimización. El objetivo final es encontrar la combinación óptima de parámetros que maximice el rendimiento del sistema de control.
 
-[Ejemplos: Matrices](/Ejemplos/Matrices/README.md)
+[Ejemplos: Matrices](Ejemplos/Matrices/README.md)
+
 [Ejemplos: Sistemas de Primer Orden](/Ejemplos/Sistemas1Orden/README.md)
+
 [Ejemplos: Sistemas de Segundo Orden](/Ejemplos/Sistemas2Orden/README.md)
 
 ## Lugar Geometrico de las Raices
