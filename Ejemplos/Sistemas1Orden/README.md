@@ -2,13 +2,11 @@
 ## Definición
 La función de transferencia de un sistema de primer orden se puede expresar como:
 
-\[ G(s) = \frac{K}{\tau s + 1} \]
+$G(s) = \frac{K}{\tau s + 1}$
 
 Donde:
-- \( K \) es la ganancia del sistema.
-- \( \tau \) es la constante de tiempo.
-
-- $\sqrt{3x-1}+(1+x)^2$
+- $K$ es la ganancia del sistema.
+- $\tau$ es la constante de tiempo.
 
 |                          | Python (control)                                    | MATLAB               |
 |--------------------------|-----------------------------------------------------|----------------------|
