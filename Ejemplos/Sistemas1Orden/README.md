@@ -12,28 +12,48 @@ Donde:
 |--------------------------|-----------------------------------------------------|----------------------|
 | **Crear Sistema**        | `G = ctrl.TransferFunction([1], [tau, 1])`         | `G = tf(1, [tau, 1])`|
 | **Mostrar Func. Transferencia** | `print(G)`                                      | `disp(G)`            |
-| **Respuesta al Escalón** | `time, response = ctrl.step_response(G)`           | `step(G)`            |
-| **Graficar Respuesta**   | `plt.plot(time, response)`                         | `title('Respuesta al Escalón en MATLAB')` |
 
 Codigo en Python
 ```python
-import numpy as np
+import control as ctrl
 import matplotlib.pyplot as plt
-from scipy import signal
 
 # Parámetros del sistema de primer orden
-tau = 1.0  # Constante de tiempo
-K = 2.0    # Ganancia
+tau = 1.0  # constante de tiempo
+K = 2.0    # ganancia
 
-# Crear el sistema de primer orden en Python
-sistema_primer_orden_python = signal.TransferFunction([K], [tau, 1])
+# Crear la función de transferencia en Python usando control
+sistema_python = ctrl.TransferFunction([K], [tau, 1])
 
-# Mostrar la representación en espacio de estados
-print("Representación en espacio de estados en Python:")
-print(signal.tf2ss([K], [tau, 1]))
+# Mostrar la función de transferencia
+print("Función de transferencia en Python:")
+print(sistema_python)
+```
 
+Codigo en Matlab
+```matlab
+% Parámetros del sistema de primer orden
+tau = 1.0;  % constante de tiempo
+K = 2.0;    % ganancia
+
+% Crear la función de transferencia en MATLAB
+sistema_matlab = tf([K], [tau, 1]);
+
+% Mostrar la función de transferencia en MATLAB
+disp('Función de transferencia en MATLAB:')
+disp(sistema_matlab)
+```
+
+## Respuesta a Entrada Paso
+|                          | Python (control)                                    | MATLAB               |
+|--------------------------|-----------------------------------------------------|----------------------|
+| **Respuesta al Escalón** | `time, response = ctrl.step_response(G)`           | `step(G)`            |
+| **Graficar Respuesta**   | `plt.plot(time, response)`                         | - |
+
+Codigo en Python
+```python
 # Graficar la respuesta al escalón en Python
-time, response = signal.step(sistema_primer_orden_python)
+time, response = ctrl.step_response(sistema_python)
 plt.plot(time, response)
 plt.title('Respuesta al escalón en Python')
 plt.xlabel('Tiempo')
@@ -44,47 +64,10 @@ plt.show()
 
 Codigo en Matlab
 ```matlab
-% Parámetros del sistema de primer orden
-tau = 1.0;  % Constante de tiempo
-K = 2.0;    % Ganancia
-
-% Crear el sistema de primer orden en MATLAB
-sistema_primer_orden_matlab = tf([K], [tau, 1]);
-
-% Mostrar la representación en espacio de estados
-disp('Representación en espacio de estados en MATLAB:')
-disp(tf2ss(sistema_primer_orden_matlab))
-
 % Graficar la respuesta al escalón en MATLAB
-step(sistema_primer_orden_matlab)
-title('Respuesta al escalón en MATLAB')
-```
-
-## Matriz
-| Lenguaje  | Librería/Función | Código para Crear una Matriz    | Ejemplo de Vector |
-|------------|-------------------|------------------------------|-------------------|
-| Python     | NumPy             | matriz_python = np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9]]) | [1, 2, 3; 4, 5, 6; 7, 8, 9]   |
-| MATLAB     | -                 | matriz_matlab = [1, 2, 3; 4, 5, 6; 7, 8, 9]; | [1, 2, 3; 4, 5, 6; 7, 8, 9]  |
-
-Codigo en Python
-```python
-import numpy as np
-
-# Crear una matriz en Python usando NumPy
-matriz_python = np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9]])
-
-# Mostrar la matriz
-print("Matriz en Python:\n", matriz_python)
-```
-
-Codigo en Matlab
-```matlab
-% Crear una matriz en MATLAB
-matriz_matlab = [1, 2, 3; 4, 5, 6; 7, 8, 9];
-
-% Mostrar la matriz
-disp('Matriz en MATLAB:')
-disp(matriz_matlab)
+figure;
+step(sistema_matlab);
+title('Respuesta al escalón en MATLAB');
 ```
 
 [Preguntas a ChatGPT](ChatGPT.md)
