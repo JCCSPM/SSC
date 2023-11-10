@@ -29,15 +29,6 @@ sistema_python = ctrl.TransferFunction([omega_n**2], [1, 2*zeta*omega_n, omega_n
 # Mostrar la función de transferencia
 print("Función de transferencia en Python:")
 print(sistema_python)
-
-# Graficar la respuesta al escalón en Python
-time, response = ctrl.step_response(sistema_python)
-plt.plot(time, response)
-plt.title('Respuesta al escalón en Python')
-plt.xlabel('Tiempo')
-plt.ylabel('Respuesta al escalón')
-plt.grid(True)
-plt.show()
 ```
 
 Codigo en Matlab
@@ -52,10 +43,14 @@ sistema_matlab = tf([omega_n^2], [1, 2*zeta*omega_n, omega_n^2]);
 % Mostrar la función de transferencia en MATLAB
 disp('Función de transferencia en MATLAB:')
 disp(sistema_matlab)
-
-% Graficar la respuesta al escalón en MATLAB
-figure;
-step(sistema_matlab);
-title('Respuesta al escalón en MATLAB');
 ```
+|                          | Python (control)                                    | MATLAB               |
+|--------------------------|-----------------------------------------------------|----------------------|
+| **Respuesta al Escalón** | `time, response = ctrl.step_response(G)`           | `step(G)`            |
+| **Graficar Respuesta**   | `plt.plot(time, response)`                         | - |
+| **Calcular Respuesta en Frecuencia** | `frecuencia, magnitud, fase = ctrl.bode(sistema_python)` | `[magnitud, fase, frecuencia] = bode(sistema_matlab);` |
+| **Graficar Diagrama de Bode** | ```plt.semilogx(frecuencia, magnitud)```<br>```plt.semilogx(frecuencia, fase)``` | ```semilogx(frecuencia, 20*log10(magnitud))```<br>```semilogx(frecuencia, fase)``` |
+| **Obtener Polos/Ceros**| `polos, ceros = ctrl.pzmap(sistema, plot=False)`             | `polos = pole(sistema); ceros = zero(sistema);` |
+| **Graficar Diagrama**  | ```python plt.scatter(np.real(polos), np.imag(polos), ...``` | ```matlab figure pzmap(sistema) title('Diagrama de Polos y Ceros - MATLAB')``` |
+
 [Preguntas a ChatGPT](ChatGPT.md)
