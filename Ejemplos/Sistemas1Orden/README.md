@@ -1,19 +1,21 @@
 # Sistemas de Primer Orden
 ## Definición
+La función de transferencia de un sistema de primer orden se puede expresar como:
+
+\[ G(s) = \frac{K}{\tau s + 1} \]
+
+Donde:
+- \( K \) es la ganancia del sistema.
+- \( \tau \) es la constante de tiempo.
+
+En Python con `scipy`, puedes representar esta función de transferencia usando:
+
 |                          | Python (control)                                    | MATLAB               |
 |--------------------------|-----------------------------------------------------|----------------------|
 | **Crear Sistema**        | `G = ctrl.TransferFunction([1], [tau, 1])`         | `G = tf(1, [tau, 1])`|
 | **Mostrar Func. Transferencia** | `print(G)`                                      | `disp(G)`            |
 | **Respuesta al Escalón** | `time, response = ctrl.step_response(G)`           | `step(G)`            |
 | **Graficar Respuesta**   | `plt.plot(time, response)`                         | `title('Respuesta al Escalón en MATLAB')` |
-
-|                                | Python (scipy)                           | MATLAB                                  |
-|--------------------------------|------------------------------------------|-----------------------------------------|
-| **Crear Sistema de Primer Orden**| `signal.TransferFunction([K], [tau, 1])` | `tf([K], [tau, 1])`                      |
-| **Mostrar en Espacio de Estados**| `print(signal.tf2ss([K], [tau, 1]))`    | `disp(tf2ss(sistema_primer_orden_matlab))`|
-| **Respuesta al Escalón**         | `signal.step(sistema_primer_orden_python)`| `step(sistema_primer_orden_matlab)`      |
-
-
 
 Codigo en Python
 ```python
