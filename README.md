@@ -31,8 +31,8 @@ En resumen, el Lugar Geométrico de las Raíces es una técnica gráfica poderos
   
 | Herramienta   | Archivo     | Descripción                            |
 |---------------|-------------|----------------------------------------|
-| Python        | `script.py` | Script para LGR con matplotlib y scipy |
-| MATLAB        | `script.m`  | Script para LGR en MATLAB              |
+| Python        | script.py | Script para LGR con matplotlib y scipy |
+| MATLAB        | script.m  | Script para LGR en MATLAB              |
   
 Codigo en Python
 ```python
